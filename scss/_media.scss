@@ -447,6 +447,21 @@
     .criminal__form-title {
         max-width: 94%;
     }
+
+    .main__inner {}
+
+    .main__form-phone {
+        display: none;
+    }
+
+    .main__form {
+        background: transparent;
+        padding: 0;
+    }
+
+    .main__intro {
+        padding-bottom: 16.25%;
+    }
 }
 
 @media(max-width: 620px) {
@@ -788,6 +803,8 @@
     .services__item-title {
         width: 139px;
     }
+
+
 }
 
 @media(max-width: 500px) {
