@@ -197,7 +197,7 @@ button {
 
     &__intro {
         position: relative;
-        padding-bottom: 56.25%;
+        padding-bottom: 29.25%;
     }
 
     &__video-bg {
@@ -207,11 +207,6 @@ button {
         width: 100%;
         height: auto;
         z-index: -1;
-    }
-
-    &__inner {
-        position: absolute;
-        bottom: 92px;
     }
 
     &__title {
@@ -383,17 +378,18 @@ button {
         line-height: 85px;
         letter-spacing: 1.25px;
         color: #363636;
+        margin-right: 10px;
+    }
 
-        span {
-            font-family: 'Lato-Regular', sans-serif;
-            font-size: 15px;
-            line-height: 111.5%;
-            letter-spacing: 0.25px;
-            color: #595959;
-            width: 100px;
-            font-weight: 400;
-            display: inline-block;
-        }
+    &__experience-text {
+        font-family: 'Lato-Regular', sans-serif;
+        font-size: 15px;
+        line-height: 111.5%;
+        letter-spacing: 0.25px;
+        color: #595959;
+        width: 100px;
+        font-weight: 400;
+        display: inline-block;
     }
 
     &__link-social {
