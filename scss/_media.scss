@@ -91,6 +91,8 @@
 }
 
 @media(max-width: 1024px) {
+
+
     .about__wrapper {
         flex-direction: column;
         align-items: center;
@@ -248,6 +250,10 @@
 @media(max-width: 768px) {
     .container {
         padding: 0 30px;
+    }
+
+    .logo img {
+        width: 47px;
     }
 
     .menu__list {
@@ -468,8 +474,20 @@
         max-width: 94%;
     }
 
+    .main {
+        background-image: url(../images/main-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        height: 480px;
+    }
+
+    .main__video-bg {
+        display: none;
+    }
+
     .main__intro {
-        padding-bottom: 24.25%;
+        padding-bottom: 244px;
     }
 
     .benefits__title {
@@ -559,7 +577,11 @@
 
     .about__link.adaptive {
         display: block;
-        margin-top: 52px;
+        margin: 42px 0 0;
+    }
+
+    .example__title {
+        margin: 8px 0 20px;
     }
 
     .example__items {
@@ -569,6 +591,10 @@
 
     .example__item-title {
         margin-bottom: 5px;
+    }
+
+    .example__text {
+        margin-bottom: 23px;
     }
 
     .example__item-title,
@@ -817,6 +843,10 @@
         width: 139px;
     }
 
+    .main__intro {
+        padding-bottom: 294px;
+    }
+
     .main__title {
         max-width: 350px;
         margin-bottom: 21px;
@@ -830,6 +860,19 @@
         margin-bottom: 20px;
     }
 
+    .about__inner {
+        width: 220px;
+        flex-wrap: wrap;
+    }
+
+    .about__experience-text {
+        order: 1;
+        width: 198px;
+    }
+
+    .about__experience {
+        margin-right: 15px;
+    }
 }
 
 @media(max-width: 500px) {
