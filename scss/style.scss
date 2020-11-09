@@ -162,6 +162,7 @@ button {
 .menu__btn {
     width: 21px;
     z-index: 10;
+    position: relative;
 
     div {
         height: 3px;
@@ -171,6 +172,33 @@ button {
     div+div {
         margin-top: 5px;
     }
+}
+
+.menu__btn-line {
+    transition: all .3s;
+}
+
+.menu__btn-line:nth-child(1).active {
+    transform: rotate(49deg);
+}
+
+.menu__btn-line:nth-child(2).active {
+    opacity: 0;
+}
+
+.menu__btn-line:nth-child(3) {
+    opacity: 0;
+    position: absolute;
+    width: 21px;
+    top: 3px;
+}
+
+.menu__btn-line:nth-child(3).active {
+    display: block;
+    top: -5px;
+    transform: rotate(-49deg);
+    opacity: 1;
+    right: 0px;
 }
 
 .phone__btn {
@@ -858,6 +886,10 @@ button {
         padding: 216px 0 144px;
     }
 
+    &__title {
+        margin-bottom: 26px;
+    }
+
     &__name {
         font-weight: 700;
         font-size: 45px;
@@ -914,6 +946,8 @@ button {
     }
 
     &__box {
+        display: flex;
+        align-items: center;
         margin-right: 12px;
     }
 
@@ -1486,7 +1520,8 @@ button {
 
     &-item {
         border: 2px dashed #95C1FF;
-        width: 540px;
+        max-width: 540px;
+        width: 100%;
         border-top-left-radius: 30px;
         border-bottom-right-radius: 30px;
         padding: 40px 38px 39px 50px;
@@ -1567,17 +1602,21 @@ button {
         text-align: center;
     }
 
-    &-video__user {
+    &-video__box {
         position: relative;
+    }
+
+    &-video__user {
         border-radius: 50%;
         margin-bottom: 42px;
+        overflow: hidden;
     }
 
     &-btn {
         background-color: transparent;
         border: none;
         position: absolute;
-        bottom: -6px;
+        bottom: 30px;
         right: 0;
         outline: none;
     }
@@ -1598,7 +1637,8 @@ button {
     }
 
     &-inner {
-        width: 540px;
+        max-width: 540px;
+        width: 100%;
     }
 
     &-inner .reviews__page-item.firts {
@@ -1607,7 +1647,8 @@ button {
     }
 
     &-wrapper {
-        width: 540px;
+        max-width: 540px;
+        width: 100%;
 
         .reviews__page-video {
             margin-top: 80px;

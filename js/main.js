@@ -18,6 +18,7 @@ $(function(){
     $('.menu__btn').on('click', function(){
         $('.menu__list').toggleClass('active');
         $('.logo').toggleClass('active');
+        $('.menu__btn-line').toggleClass('active');
        
     });
     $('.example__items').slick({
