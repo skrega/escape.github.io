@@ -103,4 +103,63 @@ $(function(){
               },
         ]
     });
+    $('.awards__items').slick({
+      arrows: false,
+      dots: true, 
+      infinite: true,
+      slidesToScroll: 1,
+      variableWidth: true,
+      responsive: [
+          {
+              breakpoint: 100000,
+              settings: "unslick"
+          },
+          {
+            breakpoint: 769,
+            settings: {               
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            }
+          },
+          {
+              breakpoint: 635,
+              settings: {               
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              }
+            },
+      ]
+  });
+    
+    $('.clients__items').slick({
+      arrows: false,
+      dots: false, 
+      infinite: true,
+      
+      responsive: [
+          {
+              breakpoint: 100000,
+              settings: "unslick"
+          },
+          {
+            breakpoint: 1150,
+            settings: {               
+              slidesToScroll: 3,
+              slidesToShow: 1,
+              variableWidth: true,
+              
+            }
+      
+          },
+          {
+              breakpoint: 635,
+              settings: {               
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                variableWidth: true,
+              }
+          },
+      ]
+    });
+    
 })

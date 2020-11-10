@@ -911,7 +911,8 @@ button {
     }
 
     &__content {
-        width: 383px;
+        max-width: 383px;
+        width: 100%;
     }
 
     &__links {
@@ -958,6 +959,9 @@ button {
         padding: 12px 13px;
         display: inline-block;
         margin-left: 14px;
+    }
+    &__icon:nth-child(1){
+        padding: 11px 16px;
     }
 
     &__question-box {
@@ -1015,6 +1019,7 @@ button {
         justify-content: space-between;
         align-items: center;
         margin: 60px 0 33px;
+        flex-wrap: wrap;
     }
 
     &__item {
