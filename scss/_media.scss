@@ -1335,6 +1335,19 @@
     .guarantee__content {
         padding: 0 30px;
     }
+
+    .founder .container {
+        padding-left: 0;
+    }
+
+    .founder__name,
+    .founder__content {
+        padding-left: 30px;
+    }
+
+    .founder__name::before {
+        left: 30px;
+    }
 }
 
 @media(max-width: 375px) {

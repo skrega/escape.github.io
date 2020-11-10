@@ -179,7 +179,7 @@ button {
 }
 
 .menu__btn-line:nth-child(1).active {
-    transform: rotate(49deg);
+    transform: rotate(45deg);
 }
 
 .menu__btn-line:nth-child(2).active {
@@ -196,7 +196,7 @@ button {
 .menu__btn-line:nth-child(3).active {
     display: block;
     top: -5px;
-    transform: rotate(-49deg);
+    transform: rotate(-45deg);
     opacity: 1;
     right: 0px;
 }
@@ -960,7 +960,8 @@ button {
         display: inline-block;
         margin-left: 14px;
     }
-    &__icon:nth-child(1){
+
+    &__icon:nth-child(1) {
         padding: 11px 16px;
     }
 
