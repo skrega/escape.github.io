@@ -225,7 +225,7 @@ button {
 
     &__intro {
         position: relative;
-        padding-bottom: 29.25%;
+        padding-bottom: 26.25%;
     }
 
     &__video-bg {
@@ -764,6 +764,13 @@ button {
 
 //end feedback
 //start map
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+}
+
 //end map
 //start footer
 .footer {
