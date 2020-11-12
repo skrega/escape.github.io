@@ -20,7 +20,7 @@
                 <nav class="header__menu">
                     <ul class="menu__list">
                         <li class="menu__link">
-                            <a class="active" href="index.html">ГЛАВНАЯ</a>
+                            <a href="index.html">ГЛАВНАЯ</a>
                         </li>
                         <li class="menu__link">
                             <a href="founder.html">ОСНОВАТЕЛЬ</a>
@@ -35,7 +35,7 @@
                             <a href="reviews.html">ОТЗЫВЫ</a>
                         </li>
                         <li class="menu__link">
-                            <a href="contacts.html">КОНТАКТЫ</a>
+                            <a class="active" href="contacts.html">КОНТАКТЫ</a>
                         </li>
                         <li class="menu__links-social">
                             <a href="#" class="menu__link-social instagram">
@@ -112,7 +112,7 @@
                     </div>
                 </div>
                 <div class="contacts__map">
-                    <img src="images/contacts-map.jpg" alt="">
+                    <div id="contacts__map"></div>
                 </div>
             </div>
 
@@ -194,12 +194,177 @@
     </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="libs/fancybox/jquery.fancybox.min.js"></script>
+    <script src="libs/slick-carousel/slick.min.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIRE9et2XV3LFzcfOKpQEKzWMjYUS098Y&callback=initMap"
+        type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"
         integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw=="
         crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+    <script>
+        let contactsMap
+
+        function initMap() {
+            contactsMap = new google.maps.Map(document.getElementById("contacts__map"), {
+
+                center: {
+                    lat: 43.1502151,
+                    lng: 131.906339
+                },
+                zoom: 17,
+                disableDefaultUI: false,
+                scaleControl: false,
+                zoomControl: false,
+                fullscreenControl: false,
+                mapTypeControl: false,
+                streetViewControl: false,
+
+                styles: [{
+                    "featureType": "landscape.natural",
+                    "stylers": [{
+                        "color": "#bcddff"
+                    }]
+                }, {
+                    "featureType": "road.highway",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "color": "#5fb3ff"
+                    }]
+                }, {
+                    "featureType": "road.arterial",
+                    "stylers": [{
+                        "color": "#ebf4ff"
+                    }]
+                }, {
+                    "featureType": "road.local",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "color": "#ebf4ff"
+                    }]
+                }, {
+                    "featureType": "road.local",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{
+                            "visibility": "on"
+                        },
+                        {
+                            "color": "#93c8ff"
+                        }
+                    ]
+                }, {
+                    "featureType": "landscape.man_made",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#c7e2ff"
+                    }]
+                }, {
+                    "featureType": "transit.station.airport",
+                    "elementType": "geometry",
+                    "stylers": [{
+                            "saturation": 100
+                        },
+                        {
+                            "gamma": 0.82
+                        },
+                        {
+                            "hue": "#0088ff"
+                        }
+                    ]
+                }, {
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "color": "#1673cb"
+                    }]
+                }, {
+                    "featureType": "road.highway",
+                    "elementType": "labels.icon",
+                    "stylers": [{
+                            "saturation": 58
+                        },
+                        {
+                            "hue": "#006eff"
+                        }
+                    ]
+                }, {
+                    "featureType": "poi",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#4797e0"
+                    }]
+                }, {
+                    "featureType": "poi.park",
+                    "elementType": "geometry",
+                    "stylers": [{
+                            "color": "#209ee1"
+                        },
+                        {
+                            "lightness": 49
+                        }
+                    ]
+                }, {
+                    "featureType": "transit.line",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "color": "#83befc"
+                    }]
+                }, {
+                    "featureType": "road.highway",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{
+                        "color": "#3ea3ff"
+                    }]
+                }, {
+                    "featureType": "administrative",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{
+                            "saturation": 86
+                        },
+                        {
+                            "hue": "#0077ff"
+                        },
+                        {
+                            "weight": 0.8
+                        }
+                    ]
+                }, {
+                    "elementType": "labels.icon",
+                    "stylers": [{
+                            "hue": "#0066ff"
+                        },
+                        {
+                            "weight": 1.9
+                        }
+                    ]
+                }, {
+                    "featureType": "poi",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                            "hue": "#0077ff"
+                        },
+                        {
+                            "saturation": -7
+                        },
+                        {
+                            "lightness": 24
+                        }
+                    ]
+                }]
+
+            });
+
+            const contactsMapMarker = new google.maps.Marker({
+                position: {
+                    lat: 43.1502151,
+                    lng: 131.906339
+                },
+                contactsMap: map,
+            });
+
+        }
+    </script>
 </body>
 
 </html>

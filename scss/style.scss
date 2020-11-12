@@ -1,107 +1,5 @@
 @import 'fonts';
-
-html,
-body {
-    overflow-x: hidden;
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    overflow-x: hidden;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-    margin: 0;
-    padding: 0;
-}
-
-h1 {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 48px;
-    letter-spacing: 1.33333px;
-
-    span {
-        color: #0764E3;
-    }
-}
-
-h3 {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 28px;
-    color: #1A1A1A;
-}
-
-p {
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-    display: inline-block;
-}
-
-button {
-    cursor: pointer;
-    outline: none;
-}
-
-.container {
-    max-width: 1180px;
-    margin: 0 auto;
-}
-
-.suptitle {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.583333px;
-    text-transform: uppercase;
-    color: #595959;
-}
-
-.btn {
-    background: #0764E3;
-    border-radius: 6px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.583333px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    border: none;
-    padding: 16px 18px;
-    cursor: pointer;
-}
-
-.text {
-    font-family: 'Lato-Regular', sans-serif;
-    font-size: 20px;
-    line-height: 32px;
-    font-weight: 400;
-    letter-spacing: 0.25px;
-    color: #595959;
-}
-
-.link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.583333px;
-    color: #0764E3;
-}
+@import 'global';
 
 //start header
 .header {
@@ -152,53 +50,6 @@ button {
         }
 
     }
-}
-
-.menu {
-    align-items: center;
-    display: none;
-}
-
-.menu__btn {
-    width: 21px;
-    z-index: 10;
-    position: relative;
-
-    div {
-        height: 3px;
-        background-color: #0764E3;
-    }
-
-    div+div {
-        margin-top: 5px;
-    }
-}
-
-.menu__btn-line {
-    transition: all .3s;
-}
-
-.menu__btn-line:nth-child(1).active {
-    transform: rotate(45deg);
-}
-
-.menu__btn-line:nth-child(2).active {
-    opacity: 0;
-}
-
-.menu__btn-line:nth-child(3) {
-    opacity: 0;
-    position: absolute;
-    width: 21px;
-    top: 3px;
-}
-
-.menu__btn-line:nth-child(3).active {
-    display: block;
-    top: -5px;
-    transform: rotate(-45deg);
-    opacity: 1;
-    right: 0px;
 }
 
 .phone__btn {
@@ -766,9 +617,13 @@ button {
 //start map
 #map {
     height: 400px;
-    /* The height is 400 pixels */
     width: 100%;
-    /* The width is the width of the web page */
+}
+
+#contacts__map {
+    width: 682px;
+    height: 491px;
+    border-radius: 15px;
 }
 
 //end map
