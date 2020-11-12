@@ -1330,7 +1330,7 @@
     }
 
     .founder__content {
-        bottom: -30px;
+        bottom: 0px;
     }
 
     .resident {
@@ -1395,6 +1395,10 @@
         right: 51px;
     }
 
+    .founder__content {
+        bottom: -52px;
+    }
+
 }
 
 @media(max-width: 340px) {
@@ -1420,5 +1424,9 @@
 
     .criminal__form-img {
         right: 26px;
+    }
+
+    .founder__content {
+        bottom: -182px;
     }
 }
