@@ -60,9 +60,8 @@ $(function(){
               breakpoint: 769,
               settings: {               
                 slidesToScroll: 1,
-                slidesToShow: 3,
-                variableWidth: true,
-                // centerMode: true,
+                slidesToShow: 2,
+                // variableWidth: true,
               }
         
             },
@@ -71,7 +70,6 @@ $(function(){
                 settings: {               
                   slidesToShow: 1,
                   slidesToScroll: 1,
-                  variableWidth: true,
                 }
             },
         ]

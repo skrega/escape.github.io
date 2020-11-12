@@ -485,8 +485,13 @@
     .reviews__tab-mails {
         display: block;
         flex-wrap: nowrap;
-        padding: 0 50px;
+        max-width: 464px;
+        width: 100%;
+        margin: 0 auto;
+    }
 
+    .reviews__tab {
+        max-width: 706px;
     }
 
     .reviews__tab-review,
@@ -498,7 +503,7 @@
 
         width: 258px;
         height: 258px;
-        padding: 40px 65px;
+        padding: 40px 43px;
 
         img {
             width: 127px;
@@ -663,12 +668,13 @@
 
     .awards__items {
         flex-wrap: nowrap;
-        width: 260px;
-        margin: 0 auto;
+        // width: 260px;
+        // margin: 0 auto;
     }
 
     .awards__item {
         margin: 0 10px 0 0;
+        padding: 57px 80px;
     }
 }
 
@@ -1102,6 +1108,11 @@
 
     .reviews__page {
         padding-top: 89px;
+    }
+
+    .awards__items {
+        width: 260px;
+        margin: 0 auto;
     }
 
     .awards__item {
