@@ -652,10 +652,6 @@
         flex-wrap: wrap;
     }
 
-    .resident .about__experience-text {
-        margin-top: 20px;
-    }
-
     .guarantee__inner {
         padding: 59px 0px 400px 0px;
         background-position: center bottom;
@@ -663,6 +659,12 @@
 
     .guarantee__text {
         max-width: 100%;
+    }
+
+    .awards__items {
+        flex-wrap: nowrap;
+        width: 260px;
+        margin: 0 auto;
     }
 
     .awards__item {
@@ -746,7 +748,8 @@
         }
     }
 
-    .about__link {
+    .about__link,
+    .awards__link {
         display: none;
     }
 
@@ -1183,6 +1186,10 @@
         width: 112px;
     }
 
+    .resident .about__experience-text {
+        margin-top: 20px;
+    }
+
 }
 
 @media(max-width: 500px) {
@@ -1351,6 +1358,10 @@
 
     .founder__name::before {
         left: 30px;
+    }
+
+    .resident .about__experience-text {
+        margin-bottom: 20px;
     }
 }
 

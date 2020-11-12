@@ -108,7 +108,7 @@ $(function(){
       dots: true, 
       infinite: true,
       slidesToScroll: 1,
-      variableWidth: true,
+    //   variableWidth: true,
       responsive: [
           {
               breakpoint: 100000,
@@ -310,11 +310,7 @@ $(function(){
         }]
         
       }); 
-      new google.maps.Marker({
-        position: myLatLng,
-        map,
-        title: "Escape",
-      });
+    
       const marker = new google.maps.Marker({
         position: {lat: 43.1502151, lng: 131.906339},
         map: map,
