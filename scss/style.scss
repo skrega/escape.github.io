@@ -783,6 +783,10 @@
     &__content {
         max-width: 383px;
         width: 100%;
+
+        &.adaptive {
+            display: none;
+        }
     }
 
     &__links {

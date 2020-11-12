@@ -134,7 +134,7 @@
 
         img {
 
-            width: 21px;
+            width: 30px;
         }
     }
 }
@@ -656,14 +656,13 @@
     }
 
     .founder__content {
-        position: absolute;
-        bottom: -20px;
         max-width: 80%;
-    }
+        display: none;
 
-    .resident {
-        padding: 396px 0 0px;
-        position: relative;
+        &.adaptive {
+            display: block;
+            margin-bottom: 40px;
+        }
     }
 
     .resident__box {
@@ -1188,10 +1187,6 @@
         margin-top: 20px;
     }
 
-    .founder__content {
-        bottom: 90px;
-    }
-
     .founder__title {
         margin-bottom: 16px;
     }
@@ -1213,8 +1208,12 @@
         padding: 106px 0 14px;
     }
 
+    .founder__content {
+        max-width: 100%;
+    }
+
     .resident {
-        padding: 286px 0 20px;
+        padding: 40px 0 20px;
     }
 
     .clients__item {
@@ -1373,14 +1372,6 @@
         width: 40px;
     }
 
-    .founder__content {
-        bottom: -90px;
-    }
-
-    .resident {
-        padding: 342px 0 0px;
-    }
-
     .resident__icon {
         margin-left: 0;
     }
@@ -1406,8 +1397,8 @@
         padding-left: 0;
     }
 
-    .founder__name,
-    .founder__content {
+    //.founder__content
+    .founder__name {
         padding-left: 30px;
     }
 
@@ -1439,10 +1430,6 @@
         right: 51px;
     }
 
-    .founder__content {
-        bottom: -52px;
-    }
-
 }
 
 @media(max-width: 340px) {
@@ -1468,10 +1455,6 @@
 
     .criminal__form-img {
         right: 26px;
-    }
-
-    .founder__content {
-        bottom: -182px;
     }
 
     .reviews__tab-review {
