@@ -391,21 +391,26 @@
     }
 
     .menu__list {
-        display: none;
-    }
-
-    .menu__list.active {
-        display: block;
-        padding: 0;
-        padding-top: 84px;
-        margin: 0;
         position: absolute;
         left: 0;
         right: 0;
         top: 0;
-        height: 100vh;
-        background-color: #fff;
+        height: 0;
+        overflow: hidden;
+        display: block;
+        padding: 0;
+        padding-top: 84px;
+        margin: 0;
         text-align: center;
+        background-color: #fff;
+        opacity: 0;
+        transition: all .4s ease 0s;
+    }
+
+    .menu__list.active {
+        height: 100vh;
+        opacity: 1;
+        overflow: visible;
         z-index: 5;
     }
 
@@ -1204,6 +1209,11 @@
         }
     }
 
+    .awards .awards__items {
+        width: 270px;
+        margin: 0 auto;
+    }
+
     .founder__inner {
         padding: 106px 0 14px;
     }
@@ -1230,11 +1240,11 @@
     }
 
     .reviews__tab-mails {
-        max-width: 534px;
+        max-width: 260px;
     }
 
     .reviews__tab-mail {
-        padding: 34px 64px;
+        padding: 40px 64px;
     }
 
     .reviews__tab-reviews {
@@ -1337,10 +1347,6 @@
     .example__items {
         padding-left: 20px;
         padding-right: 20px;
-    }
-
-    .reviews__tab-mails {
-        padding: 0 49px;
     }
 
     .criminal__form-img {
