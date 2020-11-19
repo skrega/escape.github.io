@@ -785,7 +785,7 @@
         justify-content: space-between;
         background-size: 600px;
         background-repeat: no-repeat;
-        background-position: 72px 100px;
+        background-position: 72px bottom;
         padding: 216px 0 144px;
     }
 
@@ -814,7 +814,7 @@
     }
 
     &__content {
-        max-width: 383px;
+        max-width: 393px;
         width: 100%;
 
         &.adaptive {
@@ -831,6 +831,22 @@
     }
 
 }
+
+// @keyframes fadeInDownLeft {
+//     from {
+//         opacity: 0;
+//         transform: translate(-220px, 240px);
+//     }
+
+//     to {
+//         opacity: 1;
+//         transform: translate(0, 0);
+//     }
+// }
+
+// .animate__fadeInDownLeft {
+//     animation-name: fadeInDownLeft;
+// }
 
 //end founder
 //start resident
@@ -881,8 +897,8 @@
 
         &:hover {
             .resident__number {
-                width: 176px;
                 opacity: 1;
+                z-index: 10;
             }
         }
     }
@@ -912,10 +928,10 @@
         width: 176px;
         transition: all .3s;
         opacity: 0;
-        width: 0;
         overflow: hidden;
         position: absolute;
         left: 55px;
+        z-index: -1;
     }
 }
 
@@ -1188,8 +1204,8 @@
 }
 
 //end case
-//start criminal
-.criminal {
+//start practice
+.practice {
     padding-top: 189px;
 
     &__inner {
@@ -1256,7 +1272,7 @@
         color: #1A1A1A;
         font-weight: 400;
         font-family: 'Lato', sans-serif;
-        width: 245px;
+        width: 255px;
         position: relative;
         padding-left: 56px;
         margin-bottom: 40px;
@@ -1340,7 +1356,15 @@
     &__form-btn {
         background-color: #fff;
         color: #0764E3;
-        padding: 16px 32px;
+        padding: 14px 32px;
+        border: 1px solid transparent;
+        transition: all .3s;
+
+        &:hover {
+            border: 1px solid #fff;
+            color: #fff;
+            background-color: transparent;
+        }
     }
 
     &__form-descr {
@@ -1355,6 +1379,26 @@
         position: absolute;
         right: 0;
         bottom: -170px;
+    }
+
+    &__stages-item {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-color: #0764E3;
+            width: 3px;
+            height: 90%;
+            top: 46px;
+            left: 19px;
+        }
+    }
+
+    &__stages-item:last-child {
+        &::before {
+            display: none;
+        }
     }
 
     &__stages-title {
@@ -1378,28 +1422,28 @@
         margin-right: 38px;
         position: relative;
 
-        &::before {
-            content: "";
-            position: absolute;
-            background-color: #0764E3;
-            width: 3px;
-            height: 161px;
-            top: 46px;
-            left: 19px;
-        }
+        // &::before {
+        //     content: "";
+        //     position: absolute;
+        //     background-color: #0764E3;
+        //     width: 3px;
+        //     height: 161px;
+        //     top: 46px;
+        //     left: 19px;
+        // }
     }
 
-    &__line-3::before {
-        height: 207px;
-    }
+    // &__line-3::before {
+    //     height: 207px;
+    // }
 
-    &__line-4::before {
-        height: 133px;
-    }
+    // &__line-4::before {
+    //     height: 133px;
+    // }
 
-    &__line-5::before {
-        height: 0;
-    }
+    // &__line-5::before {
+    //     height: 0;
+    // }
 
     &__stages-heading {
         max-width: 681px;
@@ -1415,7 +1459,7 @@
     }
 }
 
-//end criminal
+//end practice
 //start reviews-page
 .reviews__page {
     padding-top: 189px;

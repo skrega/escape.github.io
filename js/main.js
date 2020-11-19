@@ -6,7 +6,7 @@ $(function(){
 
     $(".main__form-phone").mask("+7 (999) 999-99-99");
     $(".feedback__form-phone").mask("+7 (999) 999-99-99");
-    $(".criminal__form-input").mask("+7 (999) 999-99-99");
+    $(".practice__form-input").mask("+7 (999) 999-99-99");
 
     $('.reviews__tab .tab').on('click', function (event) {
         var id = $(this).attr('data-id');

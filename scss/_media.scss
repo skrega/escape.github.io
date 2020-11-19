@@ -229,7 +229,7 @@
         width: 200px;
     }
 
-    .criminal__form-img {
+    .practice__form-img {
         position: absolute;
         right: -80px;
         bottom: -170px;
@@ -588,15 +588,15 @@
         display: block;
     }
 
-    .criminal__title {
+    .practice__title {
         margin-bottom: 20px;
     }
 
-    .criminal__form-inner {
+    .practice__form-inner {
         padding: 28px 26px 360px;
     }
 
-    .criminal__form-img {
+    .practice__form-img {
         position: absolute;
         right: 240px;
         bottom: -174px;
@@ -604,11 +604,11 @@
         text-align: center;
     }
 
-    .criminal__box {
+    .practice__box {
         display: none;
     }
 
-    .criminal__form-title {
+    .practice__form-title {
         max-width: 94%;
     }
 
@@ -706,7 +706,7 @@
         padding: 35px 0;
     }
 
-    .criminal {
+    .practice {
         padding-top: 99px;
     }
 }
@@ -958,42 +958,42 @@
         padding: 109px 0 35px;
     }
 
-    .criminal__text {
+    .practice__text {
         margin-bottom: 17px;
     }
 
-    .criminal__title-categories {
+    .practice__title-categories {
         margin: 20px 0;
         letter-spacing: normal;
     }
 
-    .criminal__categorie {
+    .practice__categorie {
         font-size: 12px;
         line-height: 18px;
     }
 
-    .criminal__title.second {
+    .practice__title.second {
         letter-spacing: normal;
     }
 
-    .criminal__categories {
+    .practice__categories {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .criminal__categorie {
+    .practice__categorie {
         padding-left: 26px;
         width: 178px;
         margin-bottom: 9px;
     }
 
-    .criminal__categorie::before {
+    .practice__categorie::before {
         width: 14px;
         height: 14px;
         top: 10px;
     }
 
-    .criminal__categorie::after {
+    .practice__categorie::after {
         background: #0764E3;
         width: 6px;
         height: 6px;
@@ -1001,55 +1001,47 @@
         left: 4px;
     }
 
-    .criminal__stages-title {
+    .practice__stages-title {
         margin: 20px 0;
         letter-spacing: normal;
     }
 
-    .criminal__stages-heading,
-    .criminal__stages-number {
+    .practice__stages-heading,
+    .practice__stages-number {
         font-size: 15px;
         line-height: 20px;
         letter-spacing: normal;
     }
 
-    .criminal__stages-number {
+    .practice__stages-number {
         margin-right: 16px;
     }
 
-    .criminal__stages-text {
+    .practice__stages-text {
         margin: 19px 0 49px 39px;
     }
 
-    .criminal__stages-number::before {
-        height: 110px;
-        top: 25px;
-        left: 6px;
+    .practice__stages-item::before {
+        height: 90%;
+        top: 26px;
+        left: 9px;
     }
 
-    .criminal__line-5::before {
-        height: 0;
-    }
-
-    .criminal__line-4::before {
-        height: 100px;
-    }
-
-    .criminal__form-img {
+    .practice__form-img {
         right: 150px;
     }
 
-    .criminal__form-title {
+    .practice__form-title {
         font-size: 20px;
         line-height: 23px;
         margin-bottom: 15px;
     }
 
-    .criminal__form-input {
+    .practice__form-input {
         padding: 12px 28px;
     }
 
-    .criminal__form-text {
+    .practice__form-text {
         font-size: 12px;
         line-height: 20px;
         letter-spacing: 0.25px;
@@ -1299,40 +1291,40 @@
         }
     }
 
-    .criminal__stages-text {
+    .practice__stages-text {
         margin: 19px 0 20px 39px;
     }
 
-    .criminal__stages-number::before {
+    .practice__stages-number::before {
         height: 121px;
     }
 
-    .criminal__line-4::before {
+    .practice__line-4::before {
         height: 100px;
     }
 
-    .criminal__line-4::before {
+    .practice__line-4::before {
         height: 73px;
     }
 
-    .criminal__line-5::before {
+    .practice__line-5::before {
         height: 0;
     }
 
-    .criminal__form-img {
+    .practice__form-img {
         right: 110px;
     }
 
-    .criminal__form-form {
+    .practice__form-form {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .criminal__form-btn {
+    .practice__form-btn {
         margin-top: 10px;
     }
 
-    .criminal__form-descr {
+    .practice__form-descr {
         font-size: 10px;
         line-height: 12px;
         color: rgba(255, 255, 255, 0.32);
@@ -1349,7 +1341,7 @@
         padding-right: 20px;
     }
 
-    .criminal__form-img {
+    .practice__form-img {
         right: 71px;
     }
 
@@ -1432,7 +1424,7 @@
         padding: 0 25px;
     }
 
-    .criminal__form-img {
+    .practice__form-img {
         right: 51px;
     }
 
@@ -1443,23 +1435,23 @@
         padding: 0 0px;
     }
 
-    .criminal__stages-number::before {
+    .practice__stages-number::before {
         height: 166px;
     }
 
-    .criminal__line-4::before {
+    .practice__line-4::before {
         height: 100px;
     }
 
-    .criminal__line-5::before {
+    .practice__line-5::before {
         height: 0;
     }
 
-    .criminal__line-3::before {
+    .practice__line-3::before {
         height: 220px;
     }
 
-    .criminal__form-img {
+    .practice__form-img {
         right: 26px;
     }
 
