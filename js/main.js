@@ -168,6 +168,8 @@ $(function(){
     $('[data-fancybox="review"]').fancybox({
         toolbar: false,
     });
+
+    new WOW().init();
 });
 
 let map;
