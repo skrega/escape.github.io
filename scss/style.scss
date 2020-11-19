@@ -704,6 +704,11 @@
         padding: 5px 0 5px 10px;
         margin-bottom: 20px;
         border-left: 2px solid #0764E3;
+        transition: all .3s;
+
+        &:hover {
+            color: #0764E3;
+        }
     }
 
     &__social {
