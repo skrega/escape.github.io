@@ -306,8 +306,15 @@
 
     .founder__inner {
         flex-direction: column;
-        background-position: right bottom;
         padding: 126px 0 14px;
+    }
+
+    .founder__img {
+        width: 100%;
+        left: 0;
+        right: 0;
+        background-position: bottom right;
+        background-size: 490px;
     }
 
     .founder__name {
@@ -656,8 +663,19 @@
     }
 
     .founder__inner {
-        background-size: 324px;
-        padding: 216px 0 14px;
+        padding: 96px 0 14px;
+    }
+
+    .founder__name {
+        margin-bottom: 150px;
+    }
+
+    .founder__img {
+        width: 100%;
+        left: 0;
+        right: 0;
+        background-position: 80% bottom;
+        background-size: 320px;
     }
 
     .founder__content {
@@ -1192,7 +1210,7 @@
         font-size: 20px;
         line-height: 23px;
         width: 199px;
-        margin-bottom: 260px;
+        margin-bottom: 291px;
 
         &::before {
             width: 42px;
@@ -1393,6 +1411,7 @@
 
     .founder .container {
         padding-left: 0;
+        padding-right: 0;
     }
 
     //.founder__content
