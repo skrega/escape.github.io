@@ -219,11 +219,40 @@
         border-radius: 6px;
         margin-bottom: 14px;
         margin-right: 17px;
-        transition: all .3s ease 0s;
+        // transition: all .3s ease 0s;
+        transition: all 300ms ease;
+        position: relative;
+        z-index: 10;
+
+        &:before {
+            position: absolute;
+            content: '';
+            width: 0%;
+            height: 100%;
+            top: -1px;
+            left: -1px;
+            right: 0;
+            z-index: -1;
+            transition: all 0.5s ease;
+            border-radius: 6px;
+            border: 1.3px solid transparent;
+        }
 
         &:hover {
-            background-color: #0764E3;
             color: #fff;
+
+            &:before {
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 100%;
+                background: #0764E3;
+                top: -1px;
+                left: -1px;
+                right: 0;
+                z-index: -1;
+                border: 1.3px solid #0764E3;
+            }
         }
     }
 }
@@ -1035,10 +1064,17 @@
         color: #595959;
         display: flex;
         align-items: center;
+        transform: scale(1);
+        transition: all .4s ease 0s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
 
         svg {
             margin-right: 10px;
         }
+
     }
 
     &__link:nth-child(2) {
@@ -1047,6 +1083,24 @@
 
     &__mail {
         color: #0764E3;
+    }
+
+    &__whatsapp:hover {
+        color: #43d854;
+
+        svg path {
+            fill: #43d854;
+        }
+
+    }
+
+    &__telegram:hover {
+        color: #0088cc;
+
+        svg path {
+            fill: #0088cc;
+        }
+
     }
 }
 
@@ -1454,29 +1508,7 @@
         color: #0764E3;
         margin-right: 38px;
         position: relative;
-
-        // &::before {
-        //     content: "";
-        //     position: absolute;
-        //     background-color: #0764E3;
-        //     width: 3px;
-        //     height: 161px;
-        //     top: 46px;
-        //     left: 19px;
-        // }
     }
-
-    // &__line-3::before {
-    //     height: 207px;
-    // }
-
-    // &__line-4::before {
-    //     height: 133px;
-    // }
-
-    // &__line-5::before {
-    //     height: 0;
-    // }
 
     &__stages-heading {
         max-width: 681px;
