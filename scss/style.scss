@@ -832,22 +832,6 @@
 
 }
 
-// @keyframes fadeInDownLeft {
-//     from {
-//         opacity: 0;
-//         transform: translate(-220px, 240px);
-//     }
-
-//     to {
-//         opacity: 1;
-//         transform: translate(0, 0);
-//     }
-// }
-
-// .animate__fadeInDownLeft {
-//     animation-name: fadeInDownLeft;
-// }
-
 //end founder
 //start resident
 .resident {
@@ -1053,6 +1037,7 @@
         box-sizing: border-box;
         padding: 57px 92px;
         margin-bottom: 15px;
+        outline: none;
     }
 
     &__item-img {
