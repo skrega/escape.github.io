@@ -71,7 +71,7 @@ button {
 }
 
 .btn {
-    background: #0764E3;
+    background-color: #0764E3;
     border-radius: 6px;
     font-weight: 500;
     font-size: 14px;
@@ -82,6 +82,11 @@ button {
     border: none;
     padding: 16px 18px;
     cursor: pointer;
+    transition: all .4s;
+
+    &:hover {
+        background-color: #065CD0;
+    }
 }
 
 .text {
@@ -99,6 +104,12 @@ button {
     line-height: 16px;
     letter-spacing: 0.583333px;
     color: #0764E3;
+    transition: all .4s;
+
+    &:hover {
+        color: #065CD0;
+        transform: translateY(-5px)
+    }
 }
 
 .menu {
