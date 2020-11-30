@@ -159,6 +159,14 @@ $(function(){
                 //variableWidth: true,
               }
           },
+          {
+            breakpoint: 426,
+            settings: {               
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              variableWidth: true,
+            }
+        },
       ]
     });
 
