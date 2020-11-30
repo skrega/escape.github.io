@@ -877,6 +877,13 @@
         margin: 0 15px 0 0px;
     }
 
+    &__feedback-title {
+        max-width: 725px;
+
+        span {
+            display: inline-block;
+        }
+    }
 }
 
 
@@ -948,6 +955,12 @@
         padding: 12px 13px;
         display: inline-block;
         margin-left: 14px;
+        transform: scale(1);
+        transition: all .4s ease 0s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 
     &__icon:nth-child(1) {
@@ -1216,6 +1229,11 @@
         line-height: 28px;
         color: #1A1A1A;
         margin: 0px 0 29px;
+        transition: all .3s;
+
+        &:hover {
+            color: #0764E3;
+        }
     }
 
     &__text {
@@ -1228,6 +1246,16 @@
 
     &__adress {
         margin-bottom: 0;
+    }
+
+    &__mail {
+        transition: all .3s;
+
+        &:hover {
+            color: #0764E3;
+        }
+
+
     }
 }
 

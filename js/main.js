@@ -134,7 +134,7 @@ $(function(){
     $('.clients__items').slick({
       arrows: false,
       dots: false, 
-      infinite: true,
+      infinite: false,
       
       responsive: [
           {
@@ -154,9 +154,9 @@ $(function(){
           {
               breakpoint: 635,
               settings: {               
-                slidesToShow: 1,
+                slidesToShow: 2,
                 slidesToScroll: 1,
-                variableWidth: true,
+                //variableWidth: true,
               }
           },
       ]
