@@ -382,6 +382,7 @@
         border-radius: 8px;
         width: 360px;
         box-sizing: border-box;
+        outline: none;
     }
 
     &__item-title {
@@ -389,7 +390,7 @@
         font-size: 16px;
         line-height: 23px;
         color: #1A1A1A;
-        min-height: 138px;
+        min-height: 160px;
         margin-bottom: 75px;
     }
 
@@ -414,10 +415,15 @@
     &__item-links {
         display: flex;
         justify-content: space-between;
+        outline: none;
     }
 
     &__item-link {
         color: #B1B1B1;
+    }
+
+    &__item-descr:focus {
+        outline: none;
     }
 
 }
@@ -1296,6 +1302,9 @@
         border: 1.3px solid #0764E3;
         border-radius: 8px;
         margin-bottom: 27px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
     }
 
     &__item-head {
@@ -1318,20 +1327,35 @@
     &__item-link {
         text-transform: uppercase;
         font-size: 14px;
-        line-height: 16px;
+        line-height: 14px;
         color: #0764E3;
         position: relative;
         display: flex;
         align-items: center;
-        transition: all .3s;
+        transition: all .3s ease 0s;
+        padding-left: 23px;
+        transform: scale(1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
 
-        svg {
-            margin-right: 5px;
+        &::before {
+            position: absolute;
+            content: "";
+            width: 14px;
+            height: 14px;
+            background-image: url(../images/link.svg);
+            background-size: contain;
+            left: 0;
+            top: 0px;
+            background-repeat: no-repeat;
         }
+
 
         &:hover {
             color: #065CD0;
-            transform: translateY(-5px);
+            transform: scale(1.1);
         }
     }
 
@@ -1342,14 +1366,52 @@
         letter-spacing: 0.583333px;
         text-transform: uppercase;
         margin-bottom: 12px;
-        color: #595959;
+        color: #000;
     }
 
     &__item-text {
         margin-bottom: 41px;
         max-width: 500px;
     }
+
 }
+
+#case__item-1 {}
+
+
+.case__item-modal {
+    border: none;
+    flex-direction: column;
+    box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.12);
+    padding: 40px 33px 44px 40px;
+    overflow: visible;
+
+    .case__item-wrapper {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .case__item-title {
+        font-size: 16px;
+        line-height: 23px;
+        margin-bottom: 35px;
+    }
+
+    .case__item-text {
+        font-size: 16px;
+        line-height: 23px;
+        margin-bottom: 35px;
+    }
+
+    .case__item-link {
+        justify-content: flex-start;
+    }
+
+
+}
+
+
+
 
 //end case
 //start practice

@@ -7,6 +7,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     overflow-x: hidden;
+    width: 100%;
 }
 
 h1,
@@ -157,4 +158,60 @@ button {
     transform: rotate(-45deg);
     opacity: 1;
     right: 0px;
+}
+
+
+.fancybox-caption,
+.fancybox-infobar,
+.fancybox-navigation .fancybox-button,
+.fancybox-toolbar {
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+    transition: none;
+}
+
+.fancybox-button {
+    background-color: transparent;
+}
+
+.fancybox-slide--html .fancybox-close-small {
+    color: currentColor;
+    padding: 10px;
+    right: -60px;
+    top: 0;
+}
+
+.fancybox-button svg path {
+    fill: #fff;
+}
+
+.fancybox-infobar,
+.fancybox-toolbar {
+    display: none;
+}
+
+.fancybox-navigation .fancybox-button--arrow_left {
+    left: calc(50% - 550px);
+    padding: 31px 26px 31px 6px;
+}
+
+.fancybox-navigation .fancybox-button--arrow_right {
+    right: calc(50% - 550px);
+    padding: 31px 26px 31px 6px;
+}
+
+.fancybox-button {
+    cursor: pointer;
+
+    svg path {
+        transition: all .4s;
+    }
+
+    &:hover {
+        svg path {
+            fill: #0764E3;
+        }
+
+    }
 }
