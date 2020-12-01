@@ -1,5 +1,18 @@
 $(function(){
 
+    $(function () {
+        var location = window.location.href;
+        var cur_url = '/' + location.split('/').pop();
+    
+        $('.menu__list a').each(function () {
+            var location = window.location.href;
+            var link = this.href; 
+            if(location == link) {
+                $(this).addClass('active');
+            }
+        });
+    });
+
     $(window).scroll(function(){
         $('.header').toggleClass('active', $(this).scrollTop() > 0);
     });

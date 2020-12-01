@@ -1340,6 +1340,34 @@
         align-items: flex-start;
     }
 
+    &__suptitle {
+        position: relative;
+        padding-left: 22px;
+        transition: all .4s ease 0s;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            left: 0px;
+            top: 2px;
+            border-style: solid;
+            border-width: 6px 11px 6px 4px;
+            border-color: transparent #C4C4C4 transparent transparent;
+            transform: rotate(3deg);
+            transition: all .4s ease 0s;
+        }
+
+        &:hover {
+            color: #000;
+
+            &::before {
+                border-color: transparent #000 transparent transparent;
+            }
+        }
+    }
+
     &__title {
         margin: 8px 0 30px;
         max-width: 890px;
