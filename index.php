@@ -24,10 +24,10 @@
                 <nav class="header__menu">
                     <ul class="menu__list">
                         <li class="menu__link wow animate__animated animate__fadeInLeft" data-wow-delay="0.7s">
-                            <a href="index.html">ГЛАВНАЯ</a>
+                            <a class="active" href="index.php">ГЛАВНАЯ</a>
                         </li>
                         <li class="menu__link wow animate__animated animate__fadeInLeft" data-wow-delay="0.8s">
-                            <a href="founder.html">ОСНОВАТЕЛЬ</a>
+                            <a href="founder.php">ОСНОВАТЕЛЬ</a>
                         </li>
                         <li class="menu__link wow animate__animated animate__fadeInLeft" data-wow-delay="1s">
                             <a href="services.html">УСЛУГИ</a>
@@ -43,27 +43,17 @@
                         </li>
                         <li class="menu__links-social">
                             <a href="#" class="menu__link-social instagram">
-                                <svg width="11" height="11" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M13.0225 0H2.6045C1.91374 0 1.25128 0.274402 0.762839 0.762839C0.274402 1.25128 0 1.91374 0 2.6045L0 13.0225C0 13.7132 0.274402 14.3757 0.762839 14.8641C1.25128 15.3526 1.91374 15.627 2.6045 15.627H13.0225C13.7132 15.627 14.3757 15.3526 14.8641 14.8641C15.3526 14.3757 15.627 13.7132 15.627 13.0225V2.6045C15.627 1.91374 15.3526 1.25128 14.8641 0.762839C14.3757 0.274402 13.7132 0 13.0225 0V0ZM14.3247 13.0225C14.3247 13.3679 14.1875 13.6991 13.9433 13.9433C13.6991 14.1875 13.3679 14.3247 13.0225 14.3247H2.6045C2.25912 14.3247 1.92789 14.1875 1.68367 13.9433C1.43945 13.6991 1.30225 13.3679 1.30225 13.0225V2.6045C1.30225 2.25912 1.43945 1.92789 1.68367 1.68367C1.92789 1.43945 2.25912 1.30225 2.6045 1.30225H13.0225C13.3679 1.30225 13.6991 1.43945 13.9433 1.68367C14.1875 1.92789 14.3247 2.25912 14.3247 2.6045V13.0225Z"
-                                        fill="white" />
-                                    <path
-                                        d="M7.813 3.90674C7.04032 3.90674 6.28499 4.13586 5.64253 4.56514C5.00006 4.99442 4.49933 5.60457 4.20364 6.31844C3.90794 7.0323 3.83058 7.81782 3.98132 8.57565C4.13206 9.33349 4.50414 10.0296 5.05051 10.576C5.59688 11.1223 6.29299 11.4944 7.05083 11.6452C7.80866 11.7959 8.59418 11.7185 9.30804 11.4228C10.0219 11.1272 10.6321 10.6264 11.0613 9.98395C11.4906 9.34149 11.7197 8.58616 11.7197 7.81348C11.7197 6.77735 11.3081 5.78365 10.5755 5.051C9.84283 4.31834 8.84913 3.90674 7.813 3.90674ZM7.813 10.418C7.29788 10.418 6.79432 10.2652 6.36602 9.97904C5.93771 9.69286 5.60388 9.28609 5.40676 8.81018C5.20963 8.33427 5.15805 7.81059 5.25854 7.30537C5.35904 6.80015 5.60709 6.33607 5.97134 5.97183C6.33558 5.60758 6.79966 5.35953 7.30488 5.25903C7.81011 5.15854 8.33379 5.21011 8.80969 5.40724C9.2856 5.60437 9.69237 5.9382 9.97856 6.3665C10.2647 6.79481 10.4175 7.29836 10.4175 7.81348C10.4175 8.50424 10.1431 9.1667 9.65465 9.65514C9.16622 10.1436 8.50375 10.418 7.813 10.418Z"
-                                        fill="white" />
-                                    <path
-                                        d="M12.046 4.55835C12.5854 4.55835 13.0227 4.12108 13.0227 3.58167C13.0227 3.04226 12.5854 2.60498 12.046 2.60498C11.5066 2.60498 11.0693 3.04226 11.0693 3.58167C11.0693 4.12108 11.5066 4.55835 12.046 4.55835Z"
-                                        fill="white" />
+                                <svg width="11" height="11" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.0225 0H2.6045C1.91374 0 1.25128 0.274402 0.762839 0.762839C0.274402 1.25128 0 1.91374 0 2.6045L0 13.0225C0 13.7132 0.274402 14.3757 0.762839 14.8641C1.25128 15.3526 1.91374 15.627 2.6045 15.627H13.0225C13.7132 15.627 14.3757 15.3526 14.8641 14.8641C15.3526 14.3757 15.627 13.7132 15.627 13.0225V2.6045C15.627 1.91374 15.3526 1.25128 14.8641 0.762839C14.3757 0.274402 13.7132 0 13.0225 0V0ZM14.3247 13.0225C14.3247 13.3679 14.1875 13.6991 13.9433 13.9433C13.6991 14.1875 13.3679 14.3247 13.0225 14.3247H2.6045C2.25912 14.3247 1.92789 14.1875 1.68367 13.9433C1.43945 13.6991 1.30225 13.3679 1.30225 13.0225V2.6045C1.30225 2.25912 1.43945 1.92789 1.68367 1.68367C1.92789 1.43945 2.25912 1.30225 2.6045 1.30225H13.0225C13.3679 1.30225 13.6991 1.43945 13.9433 1.68367C14.1875 1.92789 14.3247 2.25912 14.3247 2.6045V13.0225Z" fill="white" />
+                                    <path d="M7.813 3.90674C7.04032 3.90674 6.28499 4.13586 5.64253 4.56514C5.00006 4.99442 4.49933 5.60457 4.20364 6.31844C3.90794 7.0323 3.83058 7.81782 3.98132 8.57565C4.13206 9.33349 4.50414 10.0296 5.05051 10.576C5.59688 11.1223 6.29299 11.4944 7.05083 11.6452C7.80866 11.7959 8.59418 11.7185 9.30804 11.4228C10.0219 11.1272 10.6321 10.6264 11.0613 9.98395C11.4906 9.34149 11.7197 8.58616 11.7197 7.81348C11.7197 6.77735 11.3081 5.78365 10.5755 5.051C9.84283 4.31834 8.84913 3.90674 7.813 3.90674ZM7.813 10.418C7.29788 10.418 6.79432 10.2652 6.36602 9.97904C5.93771 9.69286 5.60388 9.28609 5.40676 8.81018C5.20963 8.33427 5.15805 7.81059 5.25854 7.30537C5.35904 6.80015 5.60709 6.33607 5.97134 5.97183C6.33558 5.60758 6.79966 5.35953 7.30488 5.25903C7.81011 5.15854 8.33379 5.21011 8.80969 5.40724C9.2856 5.60437 9.69237 5.9382 9.97856 6.3665C10.2647 6.79481 10.4175 7.29836 10.4175 7.81348C10.4175 8.50424 10.1431 9.1667 9.65465 9.65514C9.16622 10.1436 8.50375 10.418 7.813 10.418Z" fill="white" />
+                                    <path d="M12.046 4.55835C12.5854 4.55835 13.0227 4.12108 13.0227 3.58167C13.0227 3.04226 12.5854 2.60498 12.046 2.60498C11.5066 2.60498 11.0693 3.04226 11.0693 3.58167C11.0693 4.12108 11.5066 4.55835 12.046 4.55835Z" fill="white" />
                                 </svg>
                             </a>
                         </li>
                         <li class="menu__links-social">
                             <a href="#" class="menu__link-social">
-                                <svg width="6" height="11" viewBox="0 0 8 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M6.53945 2.49062H8V0.105625C7.74802 0.073125 6.88143 0 5.87218 0C3.76635 0 2.32381 1.24187 2.32381 3.52437V5.625H0V8.29125H2.32381V15.5H5.1729V8.29187H7.40272L7.75669 5.62563H5.17224V3.78875C5.1729 3.01813 5.39422 2.49062 6.53945 2.49062Z"
-                                        fill="white" />
+                                <svg width="6" height="11" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.53945 2.49062H8V0.105625C7.74802 0.073125 6.88143 0 5.87218 0C3.76635 0 2.32381 1.24187 2.32381 3.52437V5.625H0V8.29125H2.32381V15.5H5.1729V8.29187H7.40272L7.75669 5.62563H5.17224V3.78875C5.1729 3.01813 5.39422 2.49062 6.53945 2.49062Z" fill="white" />
                                 </svg>
                             </a>
                         </li>
@@ -84,8 +74,7 @@
     </header>
     <section class="main">
         <div class="main__intro">
-            <video class="main__video-bg" width="100%" height="auto" preload="auto" muted autoplay="autoplay"
-                loop="loop">
+            <video class="main__video-bg" width="100%" height="auto" preload="auto" muted autoplay="autoplay" loop="loop">
                 <source src="video/bg.mp4" type="video/mp4">
             </video>
         </div>
@@ -207,71 +196,52 @@
                 Ключевые практики
             </h1>
             <div class="services__inner">
-                <a href="semeynoye-pravo.html" class="services__link wow animate__animated animate__fadeInUp"
-                    data-wow-delay="1s" target="_blank">
+                <a href="semeynoye-pravo.html" class="services__link wow animate__animated animate__fadeInUp" data-wow-delay="1s" target="_blank">
                     Семейное право
                 </a>
-                <a href="grazhdanskoye-pravo.html" class="services__link wow animate__animated animate__fadeInUp "
-                    data-wow-delay="1.2s" target="_blank">
+                <a href="grazhdanskoye-pravo.html" class="services__link wow animate__animated animate__fadeInUp " data-wow-delay="1.2s" target="_blank">
                     Гражданское право
                 </a>
-                <a href="korporativnoye-pravo.html" class="services__link wow animate__animated animate__fadeInUp"
-                    data-wow-delay="1.3s" target="_blank">
+                <a href="korporativnoye-pravo.html" class="services__link wow animate__animated animate__fadeInUp" data-wow-delay="1.3s" target="_blank">
                     Корпоративное право
                 </a>
-                <a href="nasledstvennoye-pravo.html" class="services__link wow animate__animated animate__fadeInUp"
-                    data-wow-delay="1.4s" target="_blank">
+                <a href="nasledstvennoye-pravo.html" class="services__link wow animate__animated animate__fadeInUp" data-wow-delay="1.4s" target="_blank">
                     Наследственное право
                 </a>
-                <a href="practice-law.html" class="services__link wow animate__animated animate__fadeInUp"
-                    data-wow-delay="1.5s" target="_blank">
+                <a href="practice-law.html" class="services__link wow animate__animated animate__fadeInUp" data-wow-delay="1.5s" target="_blank">
                     Уголовное право
                 </a>
-                <a href="administrativnoye-pravo.html" class="services__link wow animate__animated animate__fadeInUp"
-                    data-wow-delay="1.6s" target="_blank">
+                <a href="administrativnoye-pravo.html" class="services__link wow animate__animated animate__fadeInUp" data-wow-delay="1.6s" target="_blank">
                     Административное право
                 </a>
-                <a href="arbitrazhnoye-pravo.html" class="services__link wow animate__animated animate__fadeInUp"
-                    data-wow-delay="1.7s" target="_blank">
+                <a href="arbitrazhnoye-pravo.html" class="services__link wow animate__animated animate__fadeInUp" data-wow-delay="1.7s" target="_blank">
                     Арбитражное право
                 </a>
-                <a href="predstavitelstvo-v-sude.html" class="services__link wow animate__animated animate__fadeInUp"
-                    data-wow-delay="1.8s" target="_blank">
+                <a href="predstavitelstvo-v-sude.html" class="services__link wow animate__animated animate__fadeInUp" data-wow-delay="1.8s" target="_blank">
                     Представительство в суде
                 </a>
-                <a href="pravovoy-analiz-dokumentov.html" class="services__link wow animate__animated animate__fadeInUp"
-                    data-wow-delay="1.9s" target="_blank">
+                <a href="pravovoy-analiz-dokumentov.html" class="services__link wow animate__animated animate__fadeInUp" data-wow-delay="1.9s" target="_blank">
                     Анализ и оценка документов
                 </a>
-                <a href="yuridicheskoye-soprovozhdeniye.html"
-                    class="services__link wow animate__animated animate__fadeInUp" data-wow-delay="2s" target="_blank">
+                <a href="yuridicheskoye-soprovozhdeniye.html" class="services__link wow animate__animated animate__fadeInUp" data-wow-delay="2s" target="_blank">
                     Юридическое сопровождение
                 </a>
-                <a href="brachnyy-kontrakt.html" class="services__link wow animate__animated animate__fadeInUp"
-                    data-wow-delay="2.1s" target="_blank">
+                <a href="brachnyy-kontrakt.html" class="services__link wow animate__animated animate__fadeInUp" data-wow-delay="2.1s" target="_blank">
                     Составление брачных контрактов
                 </a>
-                <a href="sostavlenie-dogovorov.html" class="services__link wow animate__animated animate__fadeInUp"
-                    data-wow-delay="2.2s" target="_blank">
+                <a href="sostavlenie-dogovorov.html" class="services__link wow animate__animated animate__fadeInUp" data-wow-delay="2.2s" target="_blank">
                     Составление договоров
                 </a>
-                <a href="pravovoy-audit.html" class="services__link wow animate__animated animate__fadeInUp"
-                    data-wow-delay="2.3s" target="_blank">
+                <a href="pravovoy-audit.html" class="services__link wow animate__animated animate__fadeInUp" data-wow-delay="2.3s" target="_blank">
                     Правовой аудит
                 </a>
-                <a href="soprovozhdeniye-sdelok-s-nedvizhimostyu.html"
-                    class="services__link wow animate__animated animate__fadeInUp" data-wow-delay="2.4s"
-                    target="_blank">
+                <a href="soprovozhdeniye-sdelok-s-nedvizhimostyu.html" class="services__link wow animate__animated animate__fadeInUp" data-wow-delay="2.4s" target="_blank">
                     Сопровождение сделок с недвижимостью
                 </a>
-                <a href="zashchita-prav-potrebiteley.html"
-                    class="services__link wow animate__animated animate__fadeInUp" data-wow-delay="2.5s"
-                    target="_blank">
+                <a href="zashchita-prav-potrebiteley.html" class="services__link wow animate__animated animate__fadeInUp" data-wow-delay="2.5s" target="_blank">
                     Защита прав потребителей
                 </a>
-                <a href="drugiye-yuridicheskiye-voprosy.html"
-                    class="services__link wow animate__animated animate__fadeInUp" data-wow-delay="2.6s"
-                    target="_blank">
+                <a href="drugiye-yuridicheskiye-voprosy.html" class="services__link wow animate__animated animate__fadeInUp" data-wow-delay="2.6s" target="_blank">
                     Другие юридические аспекты
                 </a>
             </div>
@@ -280,8 +250,7 @@
     <section class="about">
         <div class="container">
             <div class="about__wrapper">
-                <div class="about__content wow animate__animated animate__fadeInUp" data-wow-delay="2s"
-                    data-wow-duration="1.5s">
+                <div class="about__content wow animate__animated animate__fadeInUp" data-wow-delay="2s" data-wow-duration="1.5s">
                     <div class="suptitle about__suptitle">
                         ОСНОВАТЕЛЬ КОМПАНИИ
                     </div>
@@ -306,27 +275,20 @@
                             Лет стаж юридической практики
                         </div>
                         <div class="about__box">
-                            <a href="https://www.instagram.com/auvasiliev/"
-                                class="about__link-social about__link-instagram"><img
-                                    src="images/icons/instagram-icon.svg" alt="instagram"></a>
-                            <a href="https://www.facebook.com/%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B9-%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D1%8C%D0%B5%D0%B2-%D0%90%D0%B4%D0%B2%D0%BE%D0%BA%D0%B0%D1%82-2221603111217790/?ref=page_internal"
-                                class="about__link-social about__link-facebook"><img
-                                    src="images/icons/facebook-icon.svg" alt="facebook"></a>
+                            <a href="https://www.instagram.com/auvasiliev/" class="about__link-social about__link-instagram"><img src="images/icons/instagram-icon.svg" alt="instagram"></a>
+                            <a href="https://www.facebook.com/%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B9-%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D1%8C%D0%B5%D0%B2-%D0%90%D0%B4%D0%B2%D0%BE%D0%BA%D0%B0%D1%82-2221603111217790/?ref=page_internal" class="about__link-social about__link-facebook"><img src="images/icons/facebook-icon.svg" alt="facebook"></a>
                         </div>
                     </div>
                 </div>
-                <div class="about__img wow animate__animated animate__fadeInUp" data-wow-delay="2.2s"
-                    data-wow-duration="1.8s">
+                <div class="about__img wow animate__animated animate__fadeInUp" data-wow-delay="2.2s" data-wow-duration="1.8s">
                     <picture>
                         <source srcset="images/about-img.jpg 1x">
-                        <img src="images/about-img.jpg" class="lazyload"
-                            srcset="images/about-img@2x.jpg 2x, images/about-img@3x.jpg 3x">
+                        <img src="images/about-img.jpg" class="lazyload" srcset="images/about-img@2x.jpg 2x, images/about-img@3x.jpg 3x">
                     </picture>
                 </div>
 
             </div>
-            <a href="founder.html" class="about__link link adaptive wow animate__animated animate__fadeInUp"
-                data-wow-delay="2.2s">
+            <a href="founder.html" class="about__link link adaptive wow animate__animated animate__fadeInUp" data-wow-delay="2.2s">
                 Подробнее
             </a>
         </div>
@@ -344,8 +306,7 @@
                 решений даже в самых сложных ситуациях.
             </div>
             <div class="example__items">
-                <div class=" example__item wow animate__animated animate__fadeInUp" data-wow-delay="1.4s"
-                    data-wow-duration="1.5s">
+                <div class=" example__item wow animate__animated animate__fadeInUp" data-wow-delay="1.4s" data-wow-duration="1.5s">
                     <h3 class="example__item-title">
                         Учётное ДТП (погиб водитель), проводилась доследственная проверка по ст.264 ч.3 УК РФ (до 5 лет
                         лишения свободы)
@@ -358,13 +319,11 @@
                         уголовного дела.
                     </div>
                     <div class="example__item-links">
-                        <a data-fancybox="case" data-src="#case__item-1" href="javascript:;"
-                            class="example__item-descr link">Подробнее</a>
+                        <a data-fancybox="case" data-src="#case__item-1" href="javascript:;" class="example__item-descr link">Подробнее</a>
                         <a href="case.html" class="example__item-link link">Все дела</a>
                     </div>
                 </div>
-                <div class="example__item wow animate__animated animate__fadeInUp" data-wow-delay="1.6s"
-                    data-wow-duration="1.5s">
+                <div class="example__item wow animate__animated animate__fadeInUp" data-wow-delay="1.6s" data-wow-duration="1.5s">
                     <h3 class="example__item-title">
                         По ст.158 ч.3 п.”а” УК РФ - кража совершённая группой лиц с незаконным проникновением в жилище
                         (до 6 лет лишения свободы)
@@ -376,13 +335,11 @@
                         Грамотно выстроенная позиция защиты, приговор суда – 3 года лишения свободы условно.
                     </div>
                     <div class="example__item-links">
-                        <a data-fancybox="case" data-src="#case__item-2" href="javascript:;"
-                            class="example__item-descr link">Подробнее</a>
+                        <a data-fancybox="case" data-src="#case__item-2" href="javascript:;" class="example__item-descr link">Подробнее</a>
                         <a href="case.html" class="example__item-link link">Все дела</a>
                     </div>
                 </div>
-                <div class="example__item wow animate__animated animate__fadeInUp" data-wow-delay="1.8s"
-                    data-wow-duration="1.5s">
+                <div class="example__item wow animate__animated animate__fadeInUp" data-wow-delay="1.8s" data-wow-duration="1.5s">
                     <h3 class="example__item-title">
                         Ордер на жильё, выданный во времена СССР, был утерян, других документов на жилое помещение не
                         было, возникла необходимость в приватизации жилья.
@@ -395,8 +352,7 @@
                         жилья.
                     </div>
                     <div class="example__item-links">
-                        <a data-fancybox="case" data-src="#case__item-3" href="javascript:;"
-                            class="example__item-descr link">Подробнее</a>
+                        <a data-fancybox="case" data-src="#case__item-3" href="javascript:;" class="example__item-descr link">Подробнее</a>
                         <a href="case.html" class="example__item-link link">Все дела</a>
                     </div>
                 </div>
@@ -406,8 +362,7 @@
     <section id="reviews" class="reviews">
         <div class="container">
             <div class="reviews__wrapper">
-                <div class="reviews__content wow animate__animated animate__fadeInUp" data-wow-delay="1s"
-                    data-wow-duration="1.5s">
+                <div class="reviews__content wow animate__animated animate__fadeInUp" data-wow-delay="1s" data-wow-duration="1.5s">
                     <div class="reviews__suptitle suptitle">
                         БЛАГОДАРНОСИТЬ
                     </div>
@@ -422,8 +377,7 @@
                     </div>
                     <a href="reviews.html" class="reviews__link link">Все отзывы</a>
                 </div>
-                <div class="reviews__tab wow animate__animated animate__fadeInUp" data-wow-delay="1.4s"
-                    data-wow-duration="1.5s">
+                <div class="reviews__tab wow animate__animated animate__fadeInUp" data-wow-delay="1.4s" data-wow-duration="1.5s">
                     <div class="tabs">
                         <span class="tab active" data-id="1">письма</span>
                         <span class="tab" data-id="2">ОТЗЫВЫ</span>
@@ -482,15 +436,10 @@
                 ОСТАВЬТЕ СООБЩЕНИЕ И МЫ СВЯЖЕМСЯ С ВАМИ
             </div>
             <form class="feedback__form">
-                <input type="text" class="feedback__form-input wow animate__animated animate__fadeInUp"
-                    data-wow-delay="1.3s" required placeholder="Ваше имя">
-                <input type="tel"
-                    class="feedback__form-input feedback__form-phone wow animate__animated animate__fadeInUp"
-                    data-wow-delay="1.4s" required placeholder="Ваш телефон">
-                <input type="email" class="feedback__form-input wow animate__animated animate__fadeInUp"
-                    data-wow-delay="1.5s" required placeholder="Ваше e-mail">
-                <textarea class="feedback__form-input feedback__form-textarea wow animate__animated animate__fadeInUp"
-                    data-wow-delay="1.6s" required placeholder="Ваше сообщение"></textarea>
+                <input type="text" class="feedback__form-input wow animate__animated animate__fadeInUp" data-wow-delay="1.3s" required placeholder="Ваше имя">
+                <input type="tel" class="feedback__form-input feedback__form-phone wow animate__animated animate__fadeInUp" data-wow-delay="1.4s" required placeholder="Ваш телефон">
+                <input type="email" class="feedback__form-input wow animate__animated animate__fadeInUp" data-wow-delay="1.5s" required placeholder="Ваше e-mail">
+                <textarea class="feedback__form-input feedback__form-textarea wow animate__animated animate__fadeInUp" data-wow-delay="1.6s" required placeholder="Ваше сообщение"></textarea>
                 <div class="feedback__form-descr wow animate__animated animate__fadeInUp" data-wow-delay="1.7s">
                     Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с политикой
                     конфиденциальности
@@ -498,23 +447,19 @@
                 <div class="feedback__form-buttons">
                     <div class="feedback__form-radios">
                         <div class="feedback__form-box wow animate__animated animate__fadeInUp" data-wow-delay="1.8s">
-                            <input type="radio" checked class="feedback__form-radio" name="feedback__form-radio"
-                                id="feedback__call">
+                            <input type="radio" checked class="feedback__form-radio" name="feedback__form-radio" id="feedback__call">
                             <label class="feedback__form-label" for="feedback__call">Позвоните мне</label>
                         </div>
                         <div class="feedback__form-box wow animate__animated animate__fadeInUp" data-wow-delay="1.9s">
-                            <input id="feedback__whats" type="radio" class="feedback__form-radio"
-                                name="feedback__form-radio">
+                            <input id="feedback__whats" type="radio" class="feedback__form-radio" name="feedback__form-radio">
                             <label class="feedback__form-label" for="feedback__whats">Напишите в WhatsApp</label>
                         </div>
                         <div class="feedback__form-box wow animate__animated animate__fadeInUp" data-wow-delay="2s">
-                            <input id="feedback__telegram" type="radio" class="feedback__form-radio"
-                                name="feedback__form-radio">
+                            <input id="feedback__telegram" type="radio" class="feedback__form-radio" name="feedback__form-radio">
                             <label class="feedback__form-label" for="feedback__telegram">Напишите в Telegram</label>
                         </div>
                     </div>
-                    <button class="feedback__form-btn btn wow animate__animated animate__fadeInUp" data-wow-delay="2.1s"
-                        type="submit">
+                    <button class="feedback__form-btn btn wow animate__animated animate__fadeInUp" data-wow-delay="2.1s" type="submit">
                         ОТПРАВИТЬ
                     </button>
                 </div>
@@ -529,79 +474,9 @@
         <div id="map" class="wow animate__animated animate__fadeInUp" data-wow-delay="1s" data-wow-duration="1.5s">
         </div>
     </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__wrapper">
-                <div class="footer__column">
-                    <a href="#" class="footer__logo">
-                        <img src="images/logo.png" alt="logo" width="45px">
-                        ESCAPE
-                    </a>
-                    <div class="footer__copy">
-                        ВСЕ ПРАВА ЗАЩИЩЕНЫ © 2020
-                        <span>Политика конфиденциальности</span>
-                    </div>
-                    <div class="footer__creator">
-                        СОЗДАНИЕ САЙТА - LAVA
-                    </div>
-                </div>
-                <div class="footer__column footer__col-items">
-                    <div class="footer__column-inner">
-                        <div class="footer__links">
-                            <div class="footer__links-col">
-                                <a href="#" class="footer__link">Главная</a>
-                                <a href="#" class="footer__link">Основатель</a>
-                            </div>
-                            <div class="footer__links-col">
-                                <a href="#" class="footer__link">Услуги</a>
-                                <a href="#" class="footer__link">Кейсы</a>
-                            </div>
-                            <div class="footer__links-col">
-                                <a href="#" class="footer__link">Отзывы</a>
-                                <a href="#" class="footer__link">Контакты</a>
-                            </div>
-                        </div>
-                        <div class="footer__social">
-                            <a href="tel:+79046291818" class="footer__social-link phone" target="_blank">
-                                <img src="images/icons/phone-icon.svg" alt="Phone">
-                            </a>
-                            <a href="http://wa.me/+79046291818" class="footer__social-link whatsapp" target="_blank">
-                                <img src="images/icons/whatsapp-icon.svg" alt="WhatsApp">
-                            </a>
-                            <a href="#" class="footer__social-link telegram" target="_blank">
-                                <img src="images/icons/telegram-icon.svg" alt="Telegram">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="footer__media">
-                        <a href="https://www.instagram.com/auvasiliev/" class="footer__media-link" target="_blank">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M13.0225 0H2.6045C1.91374 0 1.25128 0.274402 0.762839 0.762839C0.274402 1.25128 0 1.91374 0 2.6045L0 13.0225C0 13.7132 0.274402 14.3757 0.762839 14.8641C1.25128 15.3526 1.91374 15.627 2.6045 15.627H13.0225C13.7132 15.627 14.3757 15.3526 14.8641 14.8641C15.3526 14.3757 15.627 13.7132 15.627 13.0225V2.6045C15.627 1.91374 15.3526 1.25128 14.8641 0.762839C14.3757 0.274402 13.7132 0 13.0225 0V0ZM14.3247 13.0225C14.3247 13.3679 14.1875 13.6991 13.9433 13.9433C13.6991 14.1875 13.3679 14.3247 13.0225 14.3247H2.6045C2.25912 14.3247 1.92789 14.1875 1.68367 13.9433C1.43945 13.6991 1.30225 13.3679 1.30225 13.0225V2.6045C1.30225 2.25912 1.43945 1.92789 1.68367 1.68367C1.92789 1.43945 2.25912 1.30225 2.6045 1.30225H13.0225C13.3679 1.30225 13.6991 1.43945 13.9433 1.68367C14.1875 1.92789 14.3247 2.25912 14.3247 2.6045V13.0225Z"
-                                    fill="#0764E3" />
-                                <path
-                                    d="M7.813 3.90674C7.04032 3.90674 6.28499 4.13586 5.64253 4.56514C5.00006 4.99442 4.49933 5.60457 4.20364 6.31844C3.90794 7.0323 3.83058 7.81782 3.98132 8.57565C4.13206 9.33349 4.50414 10.0296 5.05051 10.576C5.59688 11.1223 6.29299 11.4944 7.05083 11.6452C7.80866 11.7959 8.59418 11.7185 9.30804 11.4228C10.0219 11.1272 10.6321 10.6264 11.0613 9.98395C11.4906 9.34149 11.7197 8.58616 11.7197 7.81348C11.7197 6.77735 11.3081 5.78365 10.5755 5.051C9.84283 4.31834 8.84913 3.90674 7.813 3.90674ZM7.813 10.418C7.29788 10.418 6.79432 10.2652 6.36602 9.97904C5.93771 9.69286 5.60388 9.28609 5.40676 8.81018C5.20963 8.33427 5.15805 7.81059 5.25854 7.30537C5.35904 6.80015 5.60709 6.33607 5.97134 5.97183C6.33558 5.60758 6.79966 5.35953 7.30488 5.25903C7.81011 5.15854 8.33379 5.21011 8.80969 5.40724C9.2856 5.60437 9.69237 5.9382 9.97856 6.3665C10.2647 6.79481 10.4175 7.29836 10.4175 7.81348C10.4175 8.50424 10.1431 9.1667 9.65465 9.65514C9.16622 10.1436 8.50375 10.418 7.813 10.418Z"
-                                    fill="#0764E3" />
-                                <path
-                                    d="M12.046 4.55835C12.5854 4.55835 13.0227 4.12108 13.0227 3.58167C13.0227 3.04226 12.5854 2.60498 12.046 2.60498C11.5066 2.60498 11.0693 3.04226 11.0693 3.58167C11.0693 4.12108 11.5066 4.55835 12.046 4.55835Z"
-                                    fill="#0764E3" />
-                            </svg>
-                        </a>
-                        <a href="https://www.facebook.com/%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B9-%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D1%8C%D0%B5%D0%B2-%D0%90%D0%B4%D0%B2%D0%BE%D0%BA%D0%B0%D1%82-2221603111217790/?ref=page_internal"
-                            class="footer__media-link" target="_blank">
-                            <svg width="8" height="16" viewBox="0 0 8 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M6.53945 2.49062H8V0.105625C7.74802 0.073125 6.88143 0 5.87218 0C3.76635 0 2.32381 1.24187 2.32381 3.52437V5.625H0V8.29125H2.32381V15.5H5.1729V8.29187H7.40272L7.75669 5.62563H5.17224V3.78875C5.1729 3.01813 5.39422 2.49062 6.53945 2.49062Z"
-                                    fill="#0764E3" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <?php
+    include 'layout/footer.php';
+    ?>
 
 
     <div id="case__item-1" class="case__item case__item-modal" style="display: none;">
@@ -693,12 +568,8 @@
     <script src="libs/fancybox/jquery.fancybox.min.js"></script>
     <script src="libs/slick-carousel/slick.min.js"></script>
     <script src="libs/wow.js/wow.min.js"></script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAojGldvDEouGkCMX35PXbDpNB39G9yrSs&callback=initMap"
-        type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"
-        integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw=="
-        crossorigin="anonymous"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAojGldvDEouGkCMX35PXbDpNB39G9yrSs&callback=initMap" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw==" crossorigin="anonymous"></script>
     <script src="libs/lazysizes/lazysizes.min.js"></script>
     <script src="js/main.js"></script>
 </body>
