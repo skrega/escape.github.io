@@ -117,12 +117,12 @@ $(function(){
         ]
     });
     $('.awards__items').slick({
-      arrows: false,
-      dots: true, 
-      infinite: true,
-      slidesToScroll: 1,
-    //   variableWidth: true,
-      responsive: [
+        arrows: false,
+        dots: false, 
+        infinite: true,
+        slidesToScroll: 1,
+        variableWidth: true,
+        responsive: [
           {
               breakpoint: 100000,
               settings: "unslick"
@@ -137,51 +137,82 @@ $(function(){
           {
               breakpoint: 635,
               settings: {               
-                slidesToShow: 1,
+                slidesToShow: 2,
                 slidesToScroll: 1,
               }
             },
-      ]
+        ]
   });
-    
-    $('.clients__items').slick({
-      arrows: false,
-      dots: false, 
-      infinite: false,
-      
-      responsive: [
-          {
-              breakpoint: 100000,
-              settings: "unslick"
-          },
-          {
-            breakpoint: 1150,
+
+    $('.reviews__items').slick({
+    arrows: false,
+    dots: true, 
+    infinite: true,
+    slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 100000,
+            settings: "unslick"
+        },
+        {
+          breakpoint: 769,
+          settings: {               
+            slidesToShow: 2,
+          }
+        },
+        {
+            breakpoint: 635,
             settings: {               
-              slidesToScroll: 3,
-              slidesToShow: 1,
-              variableWidth: true,
-              
-            }
-      
-          },
-          {
-              breakpoint: 635,
-              settings: {               
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                //variableWidth: true,
-              }
-          },
-          {
-            breakpoint: 426,
-            settings: {               
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              variableWidth: true,
+              slidesToShow: 2,
             }
         },
-      ]
-    });
+        {
+            breakpoint: 490,
+            settings: {               
+              slidesToShow: 1,
+            }
+        },
+    ]
+});
+    
+    // $('.clients__items').slick({
+    //   arrows: false,
+    //   dots: false, 
+    //   infinite: false,
+      
+    //   responsive: [
+    //       {
+    //           breakpoint: 100000,
+    //           settings: "unslick"
+    //       },
+    //       {
+    //         breakpoint: 1150,
+    //         settings: {               
+    //           slidesToScroll: 3,
+    //           slidesToShow: 1,
+    //           variableWidth: true,
+              
+    //         }
+      
+    //       },
+    //       {
+    //           breakpoint: 635,
+    //           settings: {               
+    //             slidesToShow: 2,
+    //             slidesToScroll: 1,
+    //             //variableWidth: true,
+    //           }
+    //       },
+    //       {
+    //         breakpoint: 426,
+    //         settings: {               
+    //           slidesToShow: 1,
+    //           slidesToScroll: 1,
+    //           variableWidth: true,
+    //         }
+    //     },
+    //   ]
+    // });
 
     $('[data-fancybox="images"]').fancybox({
         toolbar: false,
@@ -191,6 +222,8 @@ $(function(){
     });
 
     new WOW().init();
+
+
 });
 
 let map;

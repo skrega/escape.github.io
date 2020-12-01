@@ -137,6 +137,17 @@
             width: 30px;
         }
     }
+
+    .clients__items {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+
+    .clients__item:nth-child(3) {
+        .clients__item-title {
+            width: 166px;
+        }
+    }
 }
 
 @media(max-width: 1024px) {
@@ -523,6 +534,7 @@
 
     .reviews__tab {
         max-width: 706px;
+        min-height: auto;
     }
 
     .reviews__tab-review,
@@ -708,8 +720,13 @@
 
     .awards__item {
         margin: 0 10px 0 0;
-        padding: 57px 80px;
+        text-align: center;
+        padding: 50px 0px;
+        height: auto;
+        // width: 340px;
+        // height: 360px;
     }
+
 
     .reviews__tab-reviews {
         flex-wrap: nowrap;
@@ -746,6 +763,21 @@
         border: 1.3px solid transparent;
         border-bottom: 1px solid #0764E3;
         border-radius: 0px;
+    }
+
+    .awards {
+
+        .awards__inner {
+            padding: 0 30px 0px 0;
+        }
+
+        .container {
+            padding: 0 0 0px 30px;
+        }
+
+        .awards__item {
+            max-width: 310px;
+        }
     }
 }
 
@@ -786,6 +818,10 @@
         font-size: 12px;
         line-height: 16px;
         padding: 14px 16px;
+    }
+
+    .awards .awards__item {
+        max-width: 240px;
     }
 
     .benefits__item {
@@ -1189,9 +1225,7 @@
     }
 
     .awards__item {
-        width: 258px;
-        height: 258px;
-        padding: 40px 67px 40px;
+        padding: 40px 0;
     }
 
     .awards__item-img {
@@ -1249,11 +1283,6 @@
         }
     }
 
-    .awards .awards__items {
-        width: 270px;
-        margin: 0 auto;
-    }
-
     .founder__inner {
         padding: 106px 0 14px;
     }
@@ -1301,6 +1330,20 @@
 
     .services__link {
         margin-bottom: 16px;
+    }
+
+    .contacts__suptitle svg {
+        margin-right: 6px;
+        width: 11px;
+    }
+
+    .contacts__row:hover svg {
+        transform: scale(1.1);
+        margin-bottom: 2px;
+    }
+
+    .clients__item:nth-child(3) .clients__item-title {
+        width: 120px;
     }
 }
 
@@ -1395,6 +1438,13 @@
     }
 }
 
+@media(max-width: 489px) {
+    .reviews__items {
+        width: 300px;
+        margin: 40px auto 0;
+    }
+}
+
 @media(max-width: 425px) {
     .example__items {
         padding-left: 20px;
@@ -1468,6 +1518,14 @@
     .resident .about__experience-text {
         margin-bottom: 20px;
     }
+
+    .founder__feedback-title span {
+        display: inline;
+    }
+
+    .feedback__title {
+        margin-bottom: 20px;
+    }
 }
 
 @media(max-width: 375px) {
@@ -1495,6 +1553,9 @@
 }
 
 @media(max-width: 340px) {
+    .reviews__items {
+        width: 260px;
+    }
 
     .practice__stages-number::before {
         height: 166px;
