@@ -753,16 +753,26 @@
     h1 {
         font-size: 20px;
         line-height: 28px;
+        letter-spacing: normal;
     }
 
     h3 {
         font-size: 15px;
         line-height: 20px;
+        letter-spacing: normal;
     }
 
     .suptitle {
         font-size: 12px;
         line-height: 16px;
+    }
+
+    .services__title {
+        margin: 8px 0 15px;
+    }
+
+    .services__items {
+        margin-top: 46px;
     }
 
     .text,
@@ -1282,7 +1292,15 @@
     }
 
     .services-page {
-        padding: 99px 0 50px;
+        padding: 99px 0 41px;
+    }
+
+    .reviews__page-title {
+        margin: 8px 0 12px;
+    }
+
+    .services__link {
+        margin-bottom: 16px;
     }
 }
 
@@ -1464,7 +1482,7 @@
     }
 
     .reviews__tab-mails {
-        padding: 0 25px;
+        padding: 0 0px;
     }
 
     .practice__form-img {
@@ -1477,9 +1495,6 @@
 }
 
 @media(max-width: 340px) {
-    .reviews__tab-mails {
-        padding: 0 0px;
-    }
 
     .practice__stages-number::before {
         height: 166px;
